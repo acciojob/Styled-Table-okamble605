@@ -4,12 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Game Statistics</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        thead {
+            background-color: #205081;
+            color: white;
+        }
+
+        th, td {
+            padding: 10px 15px;
+            text-align: center;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #d9d9d9;
+        }
+
+        tbody tr:hover {
+            background-color: #b0c4de;
+        }
+
+        th {
+            text-transform: uppercase;
+        }
+
+        caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <!-- add table here -->
-
-        
+    <table>
+        <caption>Game Statistics</caption>
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>KILLS</th>
+                <th>SAVED</th>
+                <th>DEATHS</th>
+                <th>REVIVES</th>
+                <th>WIN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hackerman</td>
+                <td>10</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Cool Doggo</td>
+                <td>13</td>
+                <td>4</td>
+                <td>8</td>
+                <td>7</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Andrews</td>
+                <td>19</td>
+                <td>2</td>
+                <td>10</td>
+                <td>11</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Strawberry</td>
+                <td>2</td>
+                <td>9</td>
+                <td>3</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
